@@ -1,0 +1,69 @@
+{
+  "name": "daskeyboard-applet--allergy-alert",
+  "displayName": "Allergy Alert",
+  "description": "displays the pollen allergy rate on Das Keyboard Q",
+  "longDescription": "Be aware of the rate of Pollen Allergy in your city",
+  "version": "1.0.0",
+  "publisher": "Das Keyboard",
+  "officialProductName": "Allergy Alert",
+  "appUrl": "",
+  "isSingleton": false,
+  "videoUrl": "",
+  "icon": "assets/icon.png",
+  "image": "assets/image-missing.png",
+  "publisherName": "Das Keyboard",
+  "authorName": "Das Keyboard",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--allergy-alert/issues",
+  "homePageUrl": "https://github.com/daskeyboard/daskeyboard-applet--allergy-alert",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--allergy-alert",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+  "changelogUrl": "CHANGELOG.md",
+  "readMeUrl": "README.md",
+  "readMeEndUserUrl": "README_ENDUSER.md",
+  "engines": {
+    "das-keyboard-q": "3.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Shirley Truffier-Blanc",
+  "license": "MIT",
+  "dependencies": {
+    "daskeyboard-applet": "2.10.6",
+    "request-promise": "^4.2.2"
+  },
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1,
+      "defaults": {
+        "origin": {
+          "x": 1,
+          "y": 1
+        }
+      }
+    },
+    "questions": [
+      {
+        "key": "allergyalert",
+        "value":"",
+        "label": "Choose a location",
+        "help": "Enter town's ZIP",
+        "required": true,
+        "order": 1,
+        "controlType": "dropdown",
+        "options": []
+      }
+    ],
+    "requirements": {
+      "applet": {
+        "allergyalert": "string"
+      }
+    }
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
