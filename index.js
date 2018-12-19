@@ -15,9 +15,6 @@ async function getAllergy (zipCode){
 
   return request.get({
     url: url,
-
-    
-
     //headers: generateServiceHeaders(), je ne sais ps si je dois vraiment l utilise pour des previsions perimees
     json: true
     //I don't know if the following code is usefull for me
@@ -33,6 +30,7 @@ async function getAllergy (zipCode){
     return null;
   })
 }
+
 //I need to code the getZoneName pour 
 
 
