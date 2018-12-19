@@ -2,7 +2,7 @@
   "name": "daskeyboard-applet--allergy-alert",
   "displayName": "Allergy Alert",
   "description": "displays the pollen allergy rate on Das Keyboard Q",
-  "longDescription": "Be aware of the rate of Pollen Allergy in your city",
+  "longDescription": "Be aware of Pollen's rate in your city",
   "version": "1.0.0",
   "publisher": "Das Keyboard",
   "officialProductName": "Allergy Alert",
@@ -47,7 +47,7 @@
     },
     "questions": [
       {
-        "key": "allergyalert",
+        "key": "zipCode",
         "value":"",
         "label": "Choose a location",
         "help": "Enter town's ZIP",
@@ -59,7 +59,7 @@
     ],
     "requirements": {
       "applet": {
-        "allergyalert": "string"
+        "zipCode": "string"
       }
     }
   },

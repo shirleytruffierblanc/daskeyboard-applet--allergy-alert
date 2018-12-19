@@ -1,17 +1,12 @@
-# Q Applet: Weather - USA
+# Q Applet: Allergy Alert
 
-Displays a 4-day weather forecast for cities located in the USA.
-
-[GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--weather-usa)
+Displays the pollen rate present in your city with the Zip Code.
 
 ## Example
 
-Displays 4-day weather forecast on a Das Keyboard Q Series.
-Each color corresponds to a weather change:  
-clear or sunny (yellow), cloudy (purple), rainy (blue), storm (red), snow (white).
-
-![Weather Forecast on a Das Keybaord Q](assets/image_keys.png "Q Weather Forecast")
-![Weather Forecast on a Das Keybaord Q](assets/image_legend.png "Q Weather Forecast")
+Displays the pollen rate on a Das Keyboard Q Series.
+Each color corresponds to a pollent rate:  
+low (green), medium (yellow), medium-high (orange), high (red)
 
 ## Changelog
 
@@ -22,10 +17,6 @@ clear or sunny (yellow), cloudy (purple), rainy (blue), storm (red), snow (white
 Requires a Das Keyboard Q Series: www.daskeyboard.com
 
 Installation, configuration and uninstallation of applets is done within the Q Desktop application (https://www.daskeyboard.com/q)
-
-## Running tests
-
-- `yarn test`
 
 ## Contributions
 
@@ -46,4 +37,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-# daskeyboard-applet--allergy-alert
