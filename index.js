@@ -6,18 +6,14 @@ const request = require('request-promise');
 const apiUrl ="https://www.pollen.com/api/forecast/current/pollen/";
 
 
-
+//I can construct correctly the API URL with this function
 async function getAllergy (zipCode){
-  const url = apiUrl + `${zipCode}`+ `-A Paw/3.1.8 (Macintosh; OS X/10.14.2) GCDHTTPRequest`
+  const url = apiUrl + `${zipCode}` + `-A Paw/3.1.8 (Macintosh; OS X/10.14.2) GCDHTTPRequest`
   logger.info ("Getting Allergy via URL " + url);
-
   console.log('valeur de l url avant la request', url);
-
   return request.get({
     url: url,
-    //headers: generateServiceHeaders(), je ne sais ps si je dois vraiment l utilise pour des previsions perimees
     json: true
-    //I don't know if the following code is usefull for me
   }).then(body => {
     const periods = body.periods;
     if (periods) {
@@ -47,7 +43,9 @@ class AllergyAlert extends q.DesktopApp {
     async run() {
       logger.info ("Running.");
      // const zoneName = await this.getZoneName();
-      const test = await getAllergy('78759');
+     // la fonction prends bien la valeur du zipcode
+     
+      const test = await getAllergy('78759'); 
       console.log('valeur de test', test);
 
 
